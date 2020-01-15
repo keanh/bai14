@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập hàm 1</title>
+</head>
+<body>
+    <script>
+
+       /* function alert1() {
+                alert("Xin chao");
+        }
+        alert1();
+
+       num=Number(prompt("Nhập 1 số bất kì"));
+       function hamTang1() {
+            num=num+1;
+            document.write(num);
+       }
+       hamTang1();
+
+       let num1=Number(prompt("Nhập số thứ nhất"));
+       let num2=Number(prompt("Nhập số thứ hai"));
+       function soSanh() {
+            if (num1 > num2){
+                document.write("Số thứ nhất lớn hơn số thứ hai");
+            }else {
+                (num1 <= num2)
+                let tong = 0;
+                tong = num1 + num2;
+                document.write("Tổng 2 số đó: " + tong);
+            }
+       }
+       soSanh();
+
+       function addNumbers() {
+           firstNum = 4;
+           secondNum = 8;
+           result = firstNum + secondNum;
+           return result;
+       }
+       result = 0;
+       alert(result);
+       result = addNumbers();
+       alert(result);
+
+        */
+       let a=prompt("Nhập tên ngôi sao");
+       let arr1= ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+       let arr2= ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+       function goiHam(arr1,arr2) {
+           /*let i=arr1.indexOf(a);
+                if (i>0){
+                    alert(arr2[i]);
+                }else {
+                    alert("Không tìm thấy");
+                }*/
+           let count = 0;
+           for (let i=0;i<arr1.length;i++){
+               if (a == arr1[i]){
+                   alert(arr2[i]);
+                   count+=1;
+               }
+           }
+           if (count <= 0){
+               alert("Không tìm thấy");
+           }
+       }
+           goiHam(arr1,arr2);
+
+
+
+    </script>
+</body>
+</html>
