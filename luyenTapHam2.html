@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập hàm 2</title>
+</head>
+<body>
+    <script>
+        /*let num=prompt("Nhập số");
+        function binhPhuong() {
+            let a;
+            a=num*num;
+            alert(a);
+        }
+        binhPhuong();
+
+        function tinhChuVaDienTich() {
+            let chuvi,dientich;
+            const pi=3.14;
+            chuvi=2*pi*num;
+            dientich=pi*num*num;
+            alert(chuvi);
+            alert(dientich);
+        }
+        tinhChuVaDienTich();
+
+        function tinhGiaiThua() {
+            let giaithua=1;
+            for (let i=1;i<=num;i++){
+                giaithua *= i;
+            }
+            alert(giaithua);
+        }
+        tinhGiaiThua();
+
+        function kiemTraKiTu() {
+            if (isNaN(num)){
+                alert("False");
+            }else{
+                alert("True")
+            }
+        }
+        kiemTraKiTu();*/
+
+        /*let daySo = Array();
+        function input() {
+            let number;
+            do{
+                number = prompt("Nhập số (Nhập q để kết thúc)");
+                if (number != "q") {
+                    daySo.push(number);
+                }
+            }while(number !== "q");
+        }
+
+        function timMin() {
+            let min=daySo[0];
+            for (let i=0;i<daySo.length;i++){
+                if (min > daySo[i]){
+                    min=daySo[i];
+                }
+            }
+            alert(min);
+        }
+        input();
+        timMin();*/
+
+        /*let num=Number.parseFloat(prompt("Nhập số"));
+        
+        function kiemTraSoNguyenDuong() {
+            if (Number.isInteger(num) && num>0){
+                alert("true")
+            }else{
+                alert("false")
+            }
+        }
+        kiemTraSoNguyenDuong();*/
+
+        /*let daySo = Array();
+        function input() {
+            let number;
+            do{
+                number = prompt("Nhập số (Nhập q để kết thúc)");
+                if (number != "q") {
+                    daySo.push(number);
+                }
+            }while(number !== "q");
+        }
+
+        function swap() {
+            let temp=0;
+            let y=daySo.length-1;
+            for (let i=0;i<y;i++){
+                temp=daySo[i];
+                daySo[i]=daySo[y];
+                daySo[y]=temp;
+                y--;
+            }
+            alert(daySo);
+        }
+        input();
+        swap();*/
+
+        let dayKiTu = Array();
+        function input() {
+            let str;
+            do{
+                str = prompt("Nhập kí tự (Nhập q để kết thúc)");
+                if (str != "q") {
+                    dayKiTu.push(str);
+                }
+            }while(str !== "q");
+        }
+        
+        function kiemTra() {
+            let count=0;
+            let a=prompt("Nhập kí tự");
+            for (let i=0;i<dayKiTu.length;i++){
+                if (a == dayKiTu[i]) {
+                    count++;
+                }
+            }
+            if (count>0){
+                alert("Kí tự " + a + " có trong mảng và xuất hiện " + count);
+            }else{
+                alert("-1");
+            }
+        }
+        input();
+        kiemTra();
+    </script>
+</body>
+</html>
