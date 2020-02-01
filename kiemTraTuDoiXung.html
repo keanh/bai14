@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra từ đối xứng</title>
+</head>
+<body>
+    <script>
+        let s=prompt("Nhập từ cần kiểm tra");
+        function isPalindrome(s) {
+            let reversed = s.split("").reverse().join("");
+            if (reversed === s) return true;
+            return false;
+        }
+        if (isPalindrome(s)===true){
+            alert("Đây là từ Palindrome")
+        }else{
+            alert("Đây không phải là từ Palindrome")
+        }
+    </script>
+</body>
+</html>
